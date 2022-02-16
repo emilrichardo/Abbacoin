@@ -1,0 +1,229 @@
+/* ============================================== */
+/* IMG */
+/* ============================================== */
+
+
+
+.luz {
+	position: absolute!important;
+	top:50%!important;
+	left: 50%!important;
+	transform: translate(-50%, -50%)!important;
+	opacity: 0.4!important;
+}
+
+.luz-image{
+	width: 40%!important;
+}
+
+/* ============================================== */
+/* COLOR */
+/* ============================================== */
+
+.c-red,
+.btn.c-red{
+	background: var(--color-red);
+}
+.btn.c-red:hover{
+	background: var(--color-red-h);
+	color: white;
+}
+
+.btn.outline.red{
+  border: 2px solid var(--color-red);
+  color: white;
+}
+
+.tc-red{
+	color: #EA574E;
+}
+
+/* ============================================== */
+/* MAP */
+/* ============================================== */
+
+.bg-map{
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-image: url("./../../assets/body/map.svg");
+	background-position: center center;
+	position: relative;
+	z-index: 10;
+}
+
+/* ============================================== */
+/* CUADRO */
+/* ============================================== */
+
+.cuadro{
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: -1;
+	height: 25vh;
+	width: 100%;
+	background: rgba(31,14,35,1);
+}
+
+.rel{
+	position: relative;
+}
+
+.br-20{
+	border-radius: 20px;
+	overflow: hidden;
+	margin-top: -100px;
+}
+
+.br-30{
+	border-radius: 30px;
+}
+
+@media screen and (max-width: 768px){
+
+	img.img{
+		width: 100%;
+	}
+
+	.cuadro{
+		height: 15vh;
+	}
+	.br-20{
+		margin-top: 0;
+	}
+}
+
+/* ============================================== */
+/* HEIGHT SIZE */
+/* ============================================== */
+
+.h-100vh{  height: 100vh;  }
+.h-50vh{  height: 50vh;  }
+
+@media screen and (max-width: 768px){
+	.h-50vh{  height: auto;  }
+}
+
+/* ============================================== */
+/* BOX */
+/* ============================================== */
+
+.box{
+	z-index: 2;
+	margin-left: 100px;
+}
+
+@media screen and (max-width: 768px){
+	.box{
+		margin-left: 0;
+	}
+}
+
+/* ============================================== */
+/* COLORS */
+/* ============================================== */
+
+.c-violet       {  background: var(--color-violet);   }
+.c-grad-violet  {
+	background: rgb(71,30,80);
+	background: linear-gradient(180deg, rgba(71,30,80,1) 0%, rgba(31,14,35,1) 100%);
+}
+
+@media screen and (max-width: 768px){
+	.small-m-center{
+	  margin-right: auto;
+	  margin-left: auto;
+	}
+}
+
+/* ============================================== */
+/* SOCIAL-SHARE */
+/* ============================================== */
+
+.social-share{
+  display: block;
+  width: 100%;
+  float: left;
+  margin: 30px 0;
+}
+
+.social-share ul{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-share li{
+  display: block;
+  float: left;
+  position: relative;
+  margin: 0px 10px;
+  overflow: hidden;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.social-share a{
+  display: block;
+  height: 45px;
+  width: 45px;
+  opacity: 1;
+
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.social-share a:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.social-share span{
+	display: none;
+}
+
+.social-share a.share-facebook.bg-color{background-color:  #2d609b;}
+.social-share a.share-twitter.bg-color{background-color:   #00c3f3;}
+.social-share a.share-tik-tok.bg-color{background-color:   #000000;}
+.social-share a.share-youtube.bg-color{background-color:   #ff0000;}
+.social-share a.share-reddit.bg-color{background-color:    #F12B00;}
+.social-share a.share-instagram.bg-color{background-color: #df0042;}
+.social-share a.share-linkedin.bg-color{background-color:  #2F7CB8;}
+
+.social-share a.share-facebook:before{content: url("./../../assets/icons/social/facebook.svg");}
+.social-share a.share-twitter:before{content: url("./../../assets/icons/social/twitter.svg");}
+.social-share a.share-tik-tok:before{content: url("./../../assets/icons/social/tik-tok.svg");}
+.social-share a.share-youtube:before{content: url("./../../assets/icons/social/youtube.svg");}
+.social-share a.share-reddit:before{content: url("./../../assets/icons/social/reddit.svg");}
+.social-share a.share-instagram:before{content: url("./../../assets/icons/social/instagram.svg");}
+.social-share a.share-linkedin:before{content: url("./../../assets/icons/social/linkedin.svg");}
+
+.social-share a.share-facebook:before,
+.social-share a.share-twitter:before,
+.social-share a.share-tik-tok:before,
+.social-share a.share-youtube:before,
+.social-share a.share-reddit:before,
+.social-share a.share-instagram:before,
+.social-share a.share-linkedin:before{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}

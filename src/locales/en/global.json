@@ -1,0 +1,45 @@
+{
+
+    "Menu_Home" : "Home" ,
+    "Menu_About" : "About us" ,
+    "Menu_Whitepaper" : "Whitepaper" ,
+
+
+
+    "Btn_Read" : "Learn more" ,
+    "Btn_Buy" : "Buy now" ,
+
+
+    "Hero_1" : "Conqer the World with <span class='tc-red'>ABBACoin</span>" ,
+    "Hero_2" : "Reduce costs and streamline your transactions securely in real time." ,
+
+
+
+    "Eco_1" : "A unique ecosystem " ,
+    "Eco_2" : "Enjoy a distributed system of technological services, which eliminates the disadvantages of the current market, and allows transfers in an agile, reliable and solidly supported manner." ,
+
+
+    "Mul_1" : "One ecosystem, multiple advantages:" ,
+    "Mul_2" : "Powered by Binance Smart Chain" ,
+    "Mul_3" : "Speeds up the transaction process by 5 seconds" ,
+    "Mul_4" : "It has its own cryptoasset" ,
+    "Mul_5" : "Eliminates the bureaucracy of the traditional banking model" ,
+    "Mul_6" : "Incorruptible" ,
+    "Mul_7" : "Transfers internationally" ,
+
+
+
+    "Com_1" : "Committed to you down to the last detail" ,
+    "Com_2" : "ABBACoin is distributed on a variable basis for better performance right from the start, thus ensuring your liquidity." ,
+
+
+
+    "Apr_1" : "Harness the potential ABBACoin." ,
+    "Apr_2" : "Cryptocurrencies have become an increasingly popular investment and financial transaction tool in the decentralized finance (DeFi) sector." ,
+
+
+
+    "Ben_1" : "Just in 2020, the crypto market grew <span class='tc-red'>300%</span>." ,
+    "Ben_2" : "Reap the benefits of the Crypto revolution! Join the ABC's of the market of the future, today. <span class='tc-red'>Bet on ABBACoin.</span>"
+
+}

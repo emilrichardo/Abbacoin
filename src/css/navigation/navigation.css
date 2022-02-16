@@ -1,0 +1,204 @@
+/* ============================================== */
+/* NAV */
+/* ============================================== */
+
+nav{
+  display: block;
+  width: 100vw;
+  position: fixed;
+  background: var(--color-dark);
+
+  -webkit-box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+
+/* ============================================== */
+/* NAVIGATION */
+/* ============================================== */
+
+.navigation{
+  margin:0 auto;
+  padding: 10px 20px;
+  max-width: var(--content-d);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.navigation .logo-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.navigation ul li,
+.navigation ul li a{
+  display: inline-block;
+}
+
+.navigation ul li a{
+  padding: 10px 30px;
+  cursor: pointer;
+  margin: 0;
+  color: white;
+}
+
+.navigation ul li a.active,
+.navigation ul li a:hover{
+  color:var(--color-red);
+}
+
+.navigation ul li a.btn{
+  padding: 10px 40px;
+  margin: 0 0 0 10px;
+}
+
+@media screen and (max-width: 1024px){
+
+  .navigation{
+    padding: 0 20px;
+  }
+
+  .navigation ul{
+    padding: 30px;
+    position: absolute;
+    top:50px;
+    right: -320px;
+    height: 100vh;
+    overflow: hidden;
+    width: 320px;
+    display: block;
+    justify-content:none;
+    background: var(--color-dark);
+  }
+
+  .navigation ul.active{
+    right: 0px;
+  }
+
+  .navigation ul li a{
+    padding: 13px 20px;
+    margin:0 0 1px 0;
+  }
+
+  .navigation ul li,
+  .navigation ul li a{
+    width: 100%;
+  }
+
+  .navigation ul li a.btn{
+    margin: 30px auto 0;
+    width: 100%;
+    display: block;
+  }
+
+}
+
+/* ============================================== */
+/* LANGUAGE */
+/* ============================================== */
+
+.language{
+  margin-left: 20px;
+}
+
+.language a{
+  display: inline-block;
+  margin: 0 10px;
+  color: var(--color-pearl);
+  text-transform: uppercase;
+}
+
+.language a:hover{
+  color: white;
+}
+[aria-current="page"]{
+  color: #EA574E!important;
+}
+
+/* ============================================== */
+/* LOGO */
+/* ============================================== */
+
+.logo img{
+  height: 50px;
+}
+
+.logo{
+  display: block;
+}
+
+@media screen and (max-width: 1024px){
+  .logo img{
+    height: 30px;
+  }
+}
+
+/* ============================================== */
+/* HAMBURGUER */
+/* ============================================== */
+
+.hamburguer{
+  position: relative;
+  width:70px;
+  float: right;
+  height:50px;
+  cursor:pointer;
+  margin:0;
+  display: none;
+  overflow: hidden;
+}
+
+.hamburguer span{
+  position:absolute;
+  display:block;
+  height:2px;
+  opacity: 1;
+  top:10px;
+  right:17px;
+  width:50%;
+  background: white;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+
+}
+
+.hamburguer span:nth-child(1){top:17px;}
+.hamburguer span:nth-child(2){top:24px;}
+.hamburguer span:nth-child(3){top:31px;}
+
+.hamburguer.active span:nth-child(1){transform: rotate(135deg);top:24px;}
+.hamburguer.active span:nth-child(2){width: 0%;}
+.hamburguer.active span:nth-child(3){transform: rotate(-135deg);top:24px;}
+
+@media screen and (max-width: 1024px){
+  .hamburguer{
+    display: block;
+  }
+}
+
+/* ============================================== */
+/* TRANSITIONS */
+/* ============================================== */
+
+nav,
+.navigation-fixed,
+.navigation,
+.hamburguer{
+  z-index: 999;
+}
+
+.hamburguer span,
+.navigation ul,
+.navigation a{
+  -webkit-transition:all 350ms ease;
+  -moz-transition:all 350ms ease;
+  -ms-transition:all 350ms ease;
+  transition:all 350ms ease;
+}

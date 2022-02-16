@@ -1,0 +1,351 @@
+
+
+
+.card-token{
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 24px 32px;
+    display: inline-block;
+    position: relative;
+    border:solid ;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+
+
+}
+
+@media (max-width:768px) {
+    .card-token{min-width: 100%;}
+}
+.content-token{
+    position: relative;
+    z-index: 1;
+}
+
+.card-md .content-token{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-token{
+    position: absolute;
+    background: no-repeat;
+    background-position: right;
+    background-size: 200px ;
+    opacity: .2;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(50%);
+    z-index: 0;
+    top: 0;
+    left: 0;
+    filter: blur(5px);
+}
+
+
+
+.card-token.theme-dark{
+    background-color: rgb(20, 21, 22);
+    color: #ffff;
+}
+
+.card-token.theme-light{
+    background-color: rgb(237, 237, 237);
+    color: rgb(20, 21, 22);
+}
+
+.card-token.theme-light.bg-transparent{
+    background-color: rgba(237, 237, 237, .5)
+}
+
+.card-token.theme-dark.bg-transparent{
+    background-color: rgba(20, 21, 22, .5)
+}
+
+.token-name{
+    display: flex;
+}
+.token-name .icon-token{
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+}
+
+.token-name h5{
+    margin: 0;
+    font-size: 18px;
+}
+
+.token-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-xs .token-price {
+    flex-direction: column;
+}
+
+.card-token.card-md .tokenprice-content{
+     min-width: 45%;
+     display: block;
+}
+.token-price .usdprice{
+    font-size: clamp(24px, 2vw, 54px);
+    margin: 10px 0;
+}
+
+.cryptoprice{
+    display: flex;
+}
+
+.ico-bnb{
+    width: 15px;
+    margin: 0 5px;
+}
+
+/*copy to clipboard*/
+.inputgroup-contract{
+    padding: 6px 0px;
+    display:flex;
+    border-radius:5px;
+    position: relative;
+}
+
+.card-xs .inputgroup-contract{
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.card-token.theme-light .inputgroup-contract{
+    background:#FBFBFB;
+    border: rgb(225, 222, 222) solid 1px;
+}
+.card-token.theme-dark .inputgroup-contract{
+    background:rgb(24, 25, 26);
+    border: rgb(38, 39, 41) 1px solid;
+    color: #BBB8B8;
+}
+
+.card-token.theme-dark .inputgroup-contract input{
+    color: #BBB8B8;
+}
+
+.card-token.card-md .inputgroup-contract{
+    min-width: 50%;
+
+    }
+
+
+.copy-input{
+    border:none;
+    background-color: transparent;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 5px 24px;
+}
+
+.inputgroup-contract button{
+    border:none;
+    padding: 5px 20px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    border-radius: 0;
+}
+
+.card-xs .inputgroup-contract  button{
+    width: 50%;
+
+}
+
+
+.inputgroup-contract button:hover svg{
+    transform: scale(1.1); /* Igual que: scaleX(0.7) scaleY(0.7) */
+
+}
+
+.inputgroup-contract  .copy-button{
+    border-top: none;
+    border-bottom: none;
+}
+.card-xs .inputgroup-contract .copy-button{
+    border: none!important;
+}
+
+.card-token.theme-dark .copy-button{
+    border: solid 1px  #5b5a5a;
+    border-top: none;
+    border-bottom: none;
+}
+.card-token.theme-light .copy-button{
+    border: solid 1px  #BBB8B8;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+
+.card-token.theme-dark .copy-button svg path{
+    fill: rgb(193, 193, 193)!important;
+
+}
+
+.copy-button span{
+    display: none;
+
+}
+
+
+.btn-fox span{
+    display: none;
+
+}
+
+
+.alertcopied{
+    position: absolute;
+    padding: 2px 8px;
+    font-size: 12px;
+    color: #000;
+    opacity: .5;
+    background-color: rgb(20, 147, 104);
+    border-radius: 5px;
+    top: 30px;
+    left: 0px;
+
+}
+.card-token.theme-dark .alertcopied{
+    color: #fff;
+}
+
+.foxicon{
+    width: 25px;
+    height: auto;
+}
+.st0{fill:#E2761B;stroke:#E2761B;stroke-linecap:round;stroke-linejoin:round;}
+.st1{fill:#E4761B;stroke:#E4761B;stroke-linecap:round;stroke-linejoin:round;}
+.st2{fill:#D7C1B3;stroke:#D7C1B3;stroke-linecap:round;stroke-linejoin:round;}
+.st3{fill:#233447;stroke:#233447;stroke-linecap:round;stroke-linejoin:round;}
+.st4{fill:#CD6116;stroke:#CD6116;stroke-linecap:round;stroke-linejoin:round;}
+.st5{fill:#E4751F;stroke:#E4751F;stroke-linecap:round;stroke-linejoin:round;}
+.st6{fill:#F6851B;stroke:#F6851B;stroke-linecap:round;stroke-linejoin:round;}
+.st7{fill:#C0AD9E;stroke:#C0AD9E;stroke-linecap:round;stroke-linejoin:round;}
+.st8{fill:#161616;stroke:#161616;stroke-linecap:round;stroke-linejoin:round;}
+.st9{fill:#763D16;stroke:#763D16;stroke-linecap:round;stroke-linejoin:round;}
+
+
+
+/*loafing spinner*/
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+
+  .card-token  .link-bsc{
+    font-size: 14px;
+    display: block;
+    padding: 0px 0;
+    text-decoration: underline;
+  }
+
+  .card-token.theme-light .link-bsc{
+    color: rgb(87, 87, 87);
+
+}
+
+.card-token.theme-dark .link-bsc{
+    color: rgb(203, 202, 202);
+}
+
+
+/*modal error*/
+
+.modal-metamask{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    background:#fff;
+    border-radius: 5px;
+    max-width: 400px;
+    position: fixed;
+    color: #000;
+    padding: 24px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-metamask.show{
+    display: inline-block;
+}
+.modal-metamask img{
+ width: 100%;
+}
+
+.overlay-ematamsk{
+    position: fixed;
+    background:#000;
+    opacity: .5;
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.overlay-ematamsk.show{
+    display: block;
+}
+
+.close-button{
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 0px;
+    padding: 5px 0;
+    width: 20px;
+    height: 35px!important;
+    background-color:rgb(181, 181, 181)  !important;
+    color: rgb(36, 36, 36);
+    cursor: pointer;
+
+}

@@ -1,0 +1,116 @@
+/* ============================================== */
+/* RESET */
+/* ============================================== */
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  color:       var(--color-silver);
+  background:  var(--color-light);
+  font-size:   var(--fs-base);
+  line-height: var(--line-h);
+  font-family: var(--f-family);
+
+  overflow-x:hidden;
+  overflow-y: scroll;
+  width:100%;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  border:0;
+  display: block;
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color:var(--color-grey);
+}
+
+ol, ul {
+  list-style:none;
+}
+
+textarea {
+  resize:vertical;
+}
+
+label{
+  font-size:   var(--fs-base);
+  line-height: var(--line-h);
+  display: inline-block;
+  margin: 5px 0;
+}
+
+span{
+  display: inline-block;
+}
+
+/*-- Font Margin --*/
+
+h1,h2,h3,h4,p{
+  margin:10px 0;
+}
+
+/*-- Font Family --*/
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--f-family-h);
+}
+
+/*-- Font Weight --*/
+
+p,li,a,body,pre,label{font-weight: 400;}
+h1,h2,h3,h4,h5,h6,b{font-weight: var(--f-weight-h);}
+
+/*-- Form --*/
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input::-webkit-input-placeholder {  color:var(--color-grey);  }
+input:-moz-placeholder           {  color:var(--color-grey);  }
+input::-moz-placeholder          {  color:var(--color-grey);  }
+input:-ms-input-placeholder      {  color:var(--color-grey);  }
+input::placeholder               {  color:var(--color-grey);  }
+
+textarea::-webkit-input-placeholder {  color:var(--color-grey);  }
+textarea:-moz-placeholder           {  color:var(--color-grey);  }
+textarea::-moz-placeholder          {  color:var(--color-grey);  }
+textarea:-ms-input-placeholder      {  color:var(--color-grey);  }
+textarea::placeholder               {  color:var(--color-grey);  }
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px var(--color-light) inset;
+    -webkit-text-fill-color: var(--color-black);
+}
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px var(--color-light) inset;
+    -webkit-text-fill-color: var(--color-black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
